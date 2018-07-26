@@ -8,6 +8,20 @@ public class BankAccount {
     private String email;
     private String phoneNumber;
 
+    // Constructor
+    public BankAccount() {
+        this(500281, 1, "Default Name", "Default Address", "Default Phone");
+        System.out.println("Empty constructor called");
+    }
+
+    public BankAccount(int accountNumber, int balance, String customerName, String email, String phoneNumber) {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.customerName = customerName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
+
     // SET
     public void setAccountNumber(int accountNumber) {
         this.accountNumber = accountNumber;
@@ -30,27 +44,27 @@ public class BankAccount {
     }
 
     // GET
-    public int getAccountNumber(int accountNumber) {
-        return this.accountNumber;
+    public int getAccountNumber() {
+        return accountNumber;
     }
 
-    public int getBalance(int balance) {
-        return this.balance;
+    public int getBalance() {
+        return balance;
     }
 
-    public String getCustomerName(String customerName) {
-        return this.customerName;
+    public String getCustomerName() {
+        return customerName;
     }
 
-    public String getEmail(String email) {
-        return this.email;
+    public String getEmail() {
+        return email;
     }
 
-    public String getPhoneNumber(String phoneNumber) {
-        return this.phoneNumber;
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 
-    //
+    // 2 methods
     public int deposit(int money) {
         System.out.println(this.customerName + ". You are adding $" + money + " to your account, with a current balance of $" + this.balance + " dollars.");
         this.balance += money;

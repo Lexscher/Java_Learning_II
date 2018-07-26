@@ -3,6 +3,10 @@ package com.alexanderschelchere;
 public class Main {
 
     public static void main(String[] args) {
+        BankAccount FaZeRug = new BankAccount();
+        System.out.println(FaZeRug.getAccountNumber());
+        FaZeRug.withdraw(20);
+
         BankAccount Jack = new BankAccount();
 
         Jack.setAccountNumber(101);
@@ -15,6 +19,9 @@ public class Main {
         Jack.withdraw(400);
         Jack.deposit(700);
         Jack.withdraw(400);
+
+        BankAccount Jill = new BankAccount(98, 1500, "Jill Saitama", "seriousseries@onepunch.com", "(718) 201-2009");
+        Jill.deposit(20000);
 
     }
 }
