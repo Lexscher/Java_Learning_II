@@ -23,6 +23,8 @@ public class Main {
         BankAccount Jill = new BankAccount(98, 1500, "Jill Saitama", "seriousseries@onepunch.com", "(718) 201-2009");
         Jill.deposit(20000);
 
+        BankAccount Dexter = new BankAccount("Dexter", "donottouchthatbutton@mylaboratory.com", "(718) 354 - 2048");
+        Dexter.deposit(20);
     }
 }
 

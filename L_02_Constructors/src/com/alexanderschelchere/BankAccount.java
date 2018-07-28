@@ -15,11 +15,16 @@ public class BankAccount {
     }
 
     public BankAccount(int accountNumber, int balance, String customerName, String email, String phoneNumber) {
+        System.out.println("Account Constructor With Parameters Called");
         this.accountNumber = accountNumber;
         this.balance = balance;
         this.customerName = customerName;
         this.email = email;
         this.phoneNumber = phoneNumber;
+    }
+
+    public BankAccount(String customerName, String email, String phoneNumber) {
+        this(99999, 100, customerName, email, phoneNumber);
     }
 
     // SET
