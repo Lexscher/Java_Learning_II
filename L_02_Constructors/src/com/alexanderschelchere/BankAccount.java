@@ -8,7 +8,7 @@ public class BankAccount {
     private String email;
     private String phoneNumber;
 
-    // Constructor
+    // Constructors
     public BankAccount() {
         this(500281, 1, "Default Name", "Default Address", "Default Phone");
         System.out.println("Empty constructor called");
