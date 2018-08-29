@@ -57,7 +57,7 @@ public class Printer {
             System.out.println("Sorry, this printer can not hold more than 250 pages of paper. You are " + (pages - 250) + "pages too many!!");
             return;
         }
-        
+
         if (this.paperCount < pages) {
             System.out.println("Sorry, you do not have enough paper. Please Re-stock the printing machine.");
             return;
