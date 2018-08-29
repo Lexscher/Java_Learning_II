@@ -69,6 +69,7 @@ public class Printer {
             if (printInColor()) {
                 System.out.println("Printing... ");
                 this.paperCount -= pages;
+                System.out.println("*Printed pages come out*");
                 return;
             } else {
                 System.out.println("Where am I going to find more colored Toner...");
@@ -79,6 +80,7 @@ public class Printer {
         if(printInBlackAndWhite()) {
             System.out.println("Printing... ");
             this.paperCount -= pages;
+            System.out.println("*Printed pages come out*");
         } else {
             System.out.println("Where am I going to find more black and white Toner...");
             return;

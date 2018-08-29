@@ -70,7 +70,9 @@ public class Office {
             return;
         }
         this.getComputer().powerUp();
+        this.computerOn = true;
         getOwner().getInformation();
+        System.out.println("Sweet! We've infiltrated the right office...");
     }
 
     public void snoopThroughDesk() {
