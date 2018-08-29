@@ -67,6 +67,7 @@ public class Office {
     public void snoopThroughComputer() {
         if (!isPasswordFound()) {
             System.out.println("Why would I turn the computer on when I know I don't know the password? Trying to conserve energy, here");
+            return;
         }
         this.getComputer().powerUp();
         getOwner().getInformation();
