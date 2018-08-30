@@ -93,6 +93,24 @@ public class Main {
             System.out.println("Car No. " + i + " is the " + car.getName() + "\n Let's hear that engine Roar!!  " + car.startEngine()
                     + "\n Let's watch that car Move!!!  " + car.accelerate() + "\n Let's see how that evasive action - "  + car.brake() + "\n");
         }
+        // Inline Class (Not recommended here, but seen a lot in Android programming for click listeners and such)
+        Car ford = new Car("Ford Falcon", 6) {
+            @Override
+            public String startEngine() {
+                return "Starterrrr UP *vuhbumbumbumbumbumbum*";
+            }
+            @Override
+            public String accelerate() {
+                return "*Whoooommmmm*";
+            }
+            @Override
+            public String brake() {
+                return "*Sksssshhhhhhhhrth*";
+            }
+        };
+        System.out.println(ford.startEngine());
+        System.out.println(ford.accelerate());
+        System.out.println(ford.brake());
     }
 
         public static Car randomCar() {
