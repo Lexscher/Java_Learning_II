@@ -127,6 +127,26 @@ public class Main {
         return null;
     }
 
+    static class Holden extends Car {
+        public Holden() {
+            super("488 GTB", 8);
+        }
+
+        @Override
+        public String startEngine() {
+            return "*BOVVVVVVVVVVV* \n *REWWWWWWWW*";
+        }
+
+        @Override
+        public String accelerate() {
+            return "*ZEEEEEERR* Supa' Quick!";
+        }
+
+        @Override
+        public String brake() {
+            return "*SCUR-SCURR*";
+        }
+    }
 }
 
 /*
