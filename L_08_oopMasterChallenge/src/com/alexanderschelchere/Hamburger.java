@@ -25,22 +25,22 @@ public class Hamburger {
         this.buns = buns;
     }
 
-    public void addTopping1(String name, double price) {
+    public void addAddon1(String name, double price) {
         this.addon1Name = name;
         this.addon1Price = price;
     }
 
-    public void addTopping2(String name, double price) {
+    public void addAddon2(String name, double price) {
         this.addon2Name = name;
         this.addon2Price = price;
     }
 
-    public void addTopping3(String name, double price) {
+    public void addAddon3(String name, double price) {
         this.addon3Name = name;
         this.addon3Price = price;
     }
 
-    public void addTopping4(String name, double price) {
+    public void addAddon4(String name, double price) {
         this.addon4Name = name;
         this.addon4Price = price;
     }
