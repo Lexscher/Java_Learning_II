@@ -18,5 +18,5 @@ public class Main {
         db.addAddon1("Fish Tacos", 7.98);
         db.total();
     }
-    
+
 }
