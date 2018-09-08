@@ -1,5 +1,6 @@
 package com.alexanderschelchere;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -25,10 +26,11 @@ public class Main {
     }
 
     public static int[] sortIntegers(int[] array) {
-        int[] sortedArr = new int[array.length];
-        for (int i = 0; i < sortedArr.length; i++) {
-            sortedArr[i] = array[i];
-        }
+//        int[] sortedArr = new int[array.length];
+//        for (int i = 0; i < sortedArr.length; i++) {
+//            sortedArr[i] = array[i];
+//        }
+        int[] sortedArr = Arrays.copyOf(array, array.length);
         boolean flag = true;
         int temp;
         while(flag) {
