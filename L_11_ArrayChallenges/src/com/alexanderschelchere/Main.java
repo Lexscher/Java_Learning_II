@@ -1,6 +1,27 @@
 package com.alexanderschelchere;
+import java.util.Arrays;
 import java.util.Scanner;
 
+// Reverse Array
+public class Main {
+    public static void main(String[] args) {
+        int[] arr = {1, 5, 3, 7 ,11, 9, 15};
+        System.out.println("My original array is " + Arrays.toString(arr));
+        reverse(arr);
+        System.out.println("My reversed array is " + Arrays.toString(arr));
+    }
+    private static void reverse(int[] arr) {
+        int maxIndex = arr.length - 1;
+        int halfWay = arr.length / 2;
+        for(int i = 0; i < halfWay; i++ ) {
+            int temp = arr[i];
+            arr[i] = arr[maxIndex - i];
+            arr[maxIndex -i] = temp;
+        }
+    }
+}
+
+/* Challenge: Find Minimum Number in the Array
 public class Main {
     // Find the minimum number in any given array.
     // allow input from the console to determine how long the array is, and what the values are.
